@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login - Gradify</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5e8d7;
+            margin: 0;
+            padding: 0;
+        }
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #200a3f, #481057);
+            color: white;
+        }
+        .form-box {
+            background-color: #320e4f;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            width: 300px;
+        }
+        .form-box h2 {
+            margin-bottom: 20px;
+        }
+        .form-box input, .form-box button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 25px;
+            border: none;
+        }
+        .form-box input {
+            background-color: #fff;
+            color: #000;
+        }
+        .form-box button {
+            background-color: #f6ead8;
+            color: black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-box">
+            <h2>Student Sign Up</h2>
+            <form id="signupForm">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="text" id="collegeId" placeholder="College ID" required>
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+                <input type="text" id="otp" placeholder="Enter OTP" required>
+                <button type="submit">Sign Up</button>
+            </form>
+
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+            window.location.href = 'studentdashboard.html'; // Redirect to dashboard page
+        });
+    </script>
+</body>
+</html>

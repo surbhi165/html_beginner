@@ -1,0 +1,140 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login - Gradify</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5e8d7;
+            margin: 0;
+            padding: 0;
+        }
+        .foam-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #200a3f, #481057);
+            color: white;
+        }
+        .login-box {
+            background-color: #320e4f;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            width: 300px;
+        }
+        .login-box h2 {
+            margin-bottom: 20px;
+        }
+        .login-box input {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .login-box button {
+            background-color: #f6ead8;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+        .login-box p {
+            color: #d1c4e9;
+        }
+    </style>
+</head>
+<body>
+    <div class="foam-container">
+        <div class="foam-box">
+            <h2>Student Login</h2>
+            <form id="login form">
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button>Login</button>
+            <p>Don't have an account? <a href="#" style="color: #f6ead8; text-decoration: none;">Sign up</a></p>
+            </form>
+            <p><a href="studentsin.html">sign up</a></p>
+        </div>
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student Login - Gradify</title>
+    <style>
+        /* Add CSS styles here */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5e8d7;
+            margin: 0;
+            padding: 0;
+        }
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #200a3f, #481057);
+            color: white;
+        }
+        .form-box {
+            background-color: #320e4f;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            width: 300px;
+        }
+        .form-box h2 {
+            margin-bottom: 20px;
+        }
+        .form-box input, .form-box button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 25px;
+            border: none;
+        }
+        .form-box input {
+            background-color: #fff;
+            color: #000;
+        }
+        .form-box button {
+            background-color: #f6ead8;
+            color: black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-box">
+            <h2>student Login</h2>
+            <form id="studentLoginForm">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p><a href="studentsin.html">Sign Up</a></p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('studentLoginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+            // Validate login credentials here
+            window.location.href = 'studentdashboard.html'; // Redirect to dashboard page
+        });
+    </script>
+</body>
+</html>
+
