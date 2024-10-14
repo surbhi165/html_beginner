@@ -1,0 +1,93 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Dashboard - Gradify</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5e8d7;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* Ensure consistent box sizing */
+        }
+        .dashboard-container {
+            padding: 20px;
+            background: linear-gradient(135deg, #200a3f, #481057);
+            color: white;
+            min-height: 100vh; /* Ensure the container takes up at least full viewport height */
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            overflow: auto; /* Handle any overflow */
+        }
+        .dashboard-box {
+            background-color: #320e4f;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 100%; /* Full width */
+            box-sizing: border-box;
+            margin-bottom: 20px; /* Space between boxes */
+        }
+        .dashboard-box h3 {
+            margin: 10px 0;
+            font-size: 24px;
+        }
+        .dashboard-box a {
+            color: #f6ead8;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        /* Responsive styling */
+        @media (max-width: 768px) {
+            .dashboard-box {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <h2 style="text-align: center;">Alumni Dashboard</h2>
+        <div class="dashboard-box">
+            <h3>Personal Profile</h3>
+            <a href="#">View Profile</a>
+        </div>
+        <div class="dashboard-box">
+            <h3>Activity Feed</h3>
+            <a href="#">View Feed</a>
+        </div>
+        <div class="dashboard-box">
+            <h3>Make Announcement</h3>
+            <a href="#">Create Announcement</a>
+        </div>
+        <div class="dashboard-box">
+            <h3>Conduct Workshop</h3>
+            <a href="#">Host Workshop</a>
+        </div>
+        <div class="dashboard-box">
+            <h3>Donation Portal</h3>
+            <a href="#">Donate</a>
+        </div>
+        <div class="dashboard-box">
+            <h3>Success Story Tracking</h3>
+            <a href="#">Track Stories</a>
+        </div>
+        <div class="dashboard-box">
+            <h3>Events and Reunions</h3>
+            <a href="#">View Events</a>
+        </div>
+        <div class="dashboard-box">
+            <h3>Feedback and Survey</h3>
+            <a href="#">Give Feedback</a>
+        </div>
+    </div>
+</body>
+</html>
+
+
